@@ -1,0 +1,16 @@
+#Environment variables
+.env
+
+#Eclipsm IDE Specific configuration
+.classpath
+.project
+.settings/
+
+#log files
+*.log
+temp/
+
+# Compiled build output
+target/
+*.class
+
