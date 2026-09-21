@@ -2,7 +2,7 @@ package com.portfolio.controller;
 
 import com.portfolio.dto.Project_text;
 import com.portfolio.repository.ProjectRepository;
-import com.portfolio.service.ProjectServices;
+import com.portfolio.service.Services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,7 +18,7 @@ import java.util.Map;
 public class ProjectController {
     
 	@Autowired
-    private ProjectServices projectServices;
+    private Services projectServices;
 	@Autowired
 	private ProjectRepository projectRepository;
 

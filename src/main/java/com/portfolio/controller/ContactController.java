@@ -22,7 +22,7 @@ public class ContactController {
    
     // Public API for visitors
     @PostMapping("/save-message")
-    public ResponseEntity<?> sendMessage(@RequestBody ContactMessage message) {
+    public ResponseEntity<?> saveMessage(@RequestBody ContactMessage message) {
     	ContactMessage save = contactRepository.save(message);
     	if(save!=null) {
     		return ResponseEntity.ok(Map.of("message","your message sent successfully"));

@@ -13,6 +13,7 @@ import jakarta.servlet.http.HttpServletRequest;
 public class UniversolExceptiomHandler {
     @ExceptionHandler(Exception.class)
 	public ResponseEntity<?> defaultExceptionHandler(Exception e, HttpServletRequest request){
+    	System.out.println("===================kuch to galat ho raha hai ==========================");
 		String url=request.getRequestURI();
 		Map<?,?> map=Map.of("message", e.getMessage() , "path", url );
 		e.printStackTrace();

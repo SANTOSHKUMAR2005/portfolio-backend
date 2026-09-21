@@ -27,7 +27,7 @@ public class AuthController {
 		String password = credentials.get("password");
 
 		Optional optional = adminRepo.findById(email);
-		System.out.println(optional);
+//		System.out.println(optional);
 		if (!optional.isEmpty() && optional.isPresent()) {
 
 			Admin admin2 = (Admin) optional.get();
@@ -47,4 +47,6 @@ public class AuthController {
 		}
 
 	}
+	
+	
 }
